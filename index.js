@@ -41,7 +41,7 @@ module.exports = {
       opts = {}
     }
     opts['Addresses.Swarm'] = ['/ip4/0.0.0.0/tcp/0']
-    opts['Addresses.Gateway'] = ''
+    // opts['Addresses.Gateway'] = ''
     opts['Addresses.API'] = '/ip4/127.0.0.1/tcp/0'
     const node = new Node(tempDir(), opts, true)
     node.init(err => {
